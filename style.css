@@ -2,133 +2,149 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    background: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
-    background-size: cover;
-    background-attachment: fixed;
+    background: #0b1220;
     color: #e5e7eb;
+    line-height: 1.6;
 }
 
 .bg-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(3, 7, 18, 0.9);
+    background: radial-gradient(circle at top, #1e293b, #020617);
     z-index: -1;
 }
 
-/* HERO */
 .hero {
     text-align: center;
     padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+}
+
+.hero h1 span {
     color: #38bdf8;
-    text-shadow: 0 0 20px #38bdf8;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    margin-top: 10px;
     color: #94a3b8;
 }
 
-/* SECTIONS */
+.hero-badges span {
+    display: inline-block;
+    margin: 12px 6px;
+    padding: 6px 14px;
+    background: #1e293b;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
 .section {
-    padding: 70px 10%;
+    padding: 80px 8%;
 }
 
 .section.dark {
-    background: rgba(15, 23, 42, 0.6);
+    background: #020617;
 }
 
-.section h2 {
+h2 {
     margin-bottom: 40px;
-    color: #7dd3fc;
+    font-size: 2rem;
+    text-align: center;
 }
 
-/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 25px;
 }
 
 .service-card {
     background: #020617;
     padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    border-radius: 14px;
     transition: 0.3s;
+    border: 1px solid #1e293b;
 }
 
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 0 30px rgba(56,189,248,0.5);
+    border-color: #38bdf8;
 }
 
 .service-card span {
-    display: block;
-    margin-top: 10px;
-    color: #38bdf8;
+    font-size: 0.85rem;
+    color: #94a3b8;
 }
 
-/* PIPELINE */
 .pipeline {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
 }
 
 .pipeline div {
-    flex: 1;
     background: #020617;
-    padding: 20px;
+    padding: 18px 22px;
     border-radius: 10px;
-    box-shadow: inset 0 0 20px rgba(56,189,248,0.3);
+    border: 1px solid #1e293b;
+    transition: 0.3s;
 }
 
-/* ARCH */
-.architecture p {
-    margin-bottom: 10px;
+.pipeline div:hover {
+    background: #1e293b;
+}
+
+.architecture {
+    max-width: 600px;
+    margin: auto;
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px 25px;
-    border: none;
+    display: block;
+    margin: 30px auto;
+    padding: 12px 28px;
     background: #38bdf8;
-    color: #020617;
+    border: none;
     border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .arch-details {
     display: none;
+    max-width: 600px;
+    margin: auto;
+}
+
+.arch-details ul {
+    list-style: square;
     margin-top: 20px;
 }
 
-/* WHY */
 .why {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 15px;
 }
 
 .why div {
     background: #020617;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 18px;
     text-align: center;
+    border-radius: 10px;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     color: #94a3b8;
 }
 

@@ -1,5 +1,10 @@
 function toggleArch() {
-    const el = document.getElementById("arch-details");
-    el.style.display = el.style.display === "block" ? "none" : "block";
+    const details = document.getElementById("arch-details");
+
+    if (details.style.display === "block") {
+        details.style.display = "none";
+    } else {
+        details.style.display = "block";
+    }
 }
 
