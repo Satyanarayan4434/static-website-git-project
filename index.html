@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AWS Core Services | DevOps Interactive Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <header>
+        <h1>☁️ AWS Core Services</h1>
+        <p>Interactive DevOps-Friendly Guide</p>
+    </header>
+
+    <section class="cards-container">
+
+        <div class="card" onclick="toggleDetails(this)">
+            <h2>EC2</h2>
+            <p class="short">Virtual Servers in the Cloud</p>
+            <div class="details">
+                <p>Amazon EC2 provides scalable virtual machines. You can launch servers in minutes and scale based on traffic.</p>
+                <span>Use case: Hosting apps, CI/CD runners</span>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleDetails(this)">
+            <h2>S3</h2>
+            <p class="short">Object Storage</p>
+            <div class="details">
+                <p>S3 stores files, backups, logs, and static websites with high durability.</p>
+                <span>Use case: Backups, artifacts, static sites</span>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleDetails(this)">
+            <h2>IAM</h2>
+            <p class="short">Access Management</p>
+            <div class="details">
+                <p>IAM controls who can access AWS resources using users, roles, and policies.</p>
+                <span>Use case: Security & least privilege</span>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleDetails(this)">
+            <h2>VPC</h2>
+            <p class="short">Networking</p>
+            <div class="details">
+                <p>VPC allows you to create isolated networks with subnets, routing, and gateways.</p>
+                <span>Use case: Secure cloud architecture</span>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleDetails(this)">
+            <h2>CloudWatch</h2>
+            <p class="short">Monitoring & Logs</p>
+            <div class="details">
+                <p>CloudWatch collects metrics, logs, and alerts for AWS resources.</p>
+                <span>Use case: Monitoring, alerting</span>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>🚀 Built for DevOps Engineers | Learn • Build • Scale</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
